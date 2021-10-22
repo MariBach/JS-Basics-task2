@@ -1,13 +1,15 @@
-// 2. function to check wheter string is blank or not
+// 2. function to check whether string is blank or not
 
 function blank_check(str) {
-    l = str.length;
-    if (l === 0) {
-        console.log("The string is blank");
-    }
-    else {
+    let l = str.length;
+    let str2 = str.split(' ').join(''); //spaces will be deleted from the string
+    let l2 = str2.length;
+    if (l != 0 && l2 != 0) {
         console.log("The string is not blank");
     }
+    else {
+        console.log("The string is blank");
+    }
 }
-let str2 = "";
-blank_check(str2);
+let str_check = "    ";
+blank_check(str_check);
